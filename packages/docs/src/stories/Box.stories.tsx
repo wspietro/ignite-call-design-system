@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react' // tipagens ts
-import { Box, BoxProps } from '@ignite-ui/react'
+import { Box, BoxProps, Text } from '@ignite-ui/react'
 
 // Configuracao global do componente, será herdado em todas as variações
 export default {
@@ -7,11 +7,7 @@ export default {
   component: Box,
 
   args: {
-    children: (
-      <>
-        <span>Testando elemento Box</span>
-      </>
-    ),
+    children: <Text>Testando elemento Box</Text>,
   },
 } as Meta<BoxProps>
 
