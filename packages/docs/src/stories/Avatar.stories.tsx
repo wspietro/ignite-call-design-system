@@ -10,6 +10,13 @@ export default {
     src: 'https://github.com/wspietro.png',
     alt: 'PWS',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 export const Primary: StoryObj<AvatarProps> = {}

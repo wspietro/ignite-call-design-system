@@ -6,11 +6,30 @@ import { ArrowRight } from 'phosphor-react'
 export default {
   title: 'Form/Button',
   component: Button,
-
   args: {
     children: 'Send',
+    variant: 'primary', // padrao para os controles
+    size: 'md', // padrao para os controles
+    disabled: false, // padrao para os controles
   },
   argTypes: {
+    variant: {
+      options: ['primary', 'secondary', 'tertiary'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
+      },
+    },
     onClick: {
       action: 'click', // log de ações no componente. https://storybook.js.org/docs/react/essentials/actions
     },
