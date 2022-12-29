@@ -1,5 +1,5 @@
 import { styled } from '../styles'
-import { ComponentProps, ElementType } from 'react'
+import { ComponentProps } from 'react'
 
 export const TextArea = styled('textarea', {
   backgroundColor: '$gray900',
@@ -30,6 +30,5 @@ export const TextArea = styled('textarea', {
   },
 })
 
-export interface TextAreaProps extends ComponentProps<typeof TextArea> {
-  as?: ElementType
-}
+export interface TextAreaProps extends ComponentProps<typeof TextArea> {}
+TextArea.displayName = 'TextArea' // nome que será disposto no storybook

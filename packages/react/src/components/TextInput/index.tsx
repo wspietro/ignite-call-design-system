@@ -15,3 +15,5 @@ export function TextInput({ prefix, ...props }: TextInputProps) {
 }
 
 // Temos um componente para o TextIpunt pois temos uma variante com prefixo (não editável);
+
+TextInput.displayName = 'TextInput' // nome que será disposto no storybook
